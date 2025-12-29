@@ -82,7 +82,7 @@ source install/setup.bash
 ## 🚀 Running the Nodes
 
 > ⚠️ **IMPORTANT NOTE**  
-> Temperature readings are currently **NOT available** and will be supported in a future update.
+> Temperature readings are currently **Available** but Atlitude readings are currently **Inaccurate**.
 
 ### 1️⃣ Basic IMU Only
 (Accelerometer + Gyroscope + Orientation)
@@ -125,6 +125,9 @@ ros2 run wt901c_imu test_imu_node \
 
 ### 4️⃣ Full IMU
 (All)
+> ⚠️ **IMPORTANT NOTE**  
+> Altitude Readings are not accurate as they are derived from the pressure, future improvements will be done.
+
 
 ```bash
 ros2 run wt901c_imu wit_imu_node 
